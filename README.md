@@ -1,4 +1,4 @@
-# SpringAngular2TypeSafe
+# SpringAngular2TypeScript
 
 This is an example of implementation of a 'Full Stack Web Application'.
 
