@@ -1,4 +1,4 @@
-System.register(['angular2/core', './davis-cup.service', 'angular2/http'], function (exports_1) {
+System.register(['../../node_modules/angular2/core', './../services/davis-cup.service', '../../node_modules/angular2/http'], function (exports_1) {
     "use strict";
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
             var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -28,7 +28,6 @@ System.register(['angular2/core', './davis-cup.service', 'angular2/http'], funct
                     this._davisService = _davisService;
                     this.title = 'Davis Cup Final Results';
                 }
-
                 AppComponent.prototype.getDavisCups = function () {
                     var _this = this;
                     /* this._davisService.getDavisCups().then(davis => this.davisCups = davis)*/
@@ -46,7 +45,7 @@ System.register(['angular2/core', './davis-cup.service', 'angular2/http'], funct
                         selector: 'my-app',
                         template: "<h1>{{title}}</h1>\n      <h2>Spring + AngularJS 2 + TypeScript</h2>\n        <ul>\n                <li *ngFor=\"#davis of davisCups\">\n                   {{davis.year}} : {{davis.winner}} defeated  {{davis.runnerUp}} {{davis.score}}\n                </li>\n        </ul>\n     ",
                         providers: [http_1.HTTP_PROVIDERS, davis_cup_service_1.DavisCupService]
-                    }),
+                    }), 
                     __metadata('design:paramtypes', [davis_cup_service_1.DavisCupService])
                 ], AppComponent);
                 return AppComponent;
