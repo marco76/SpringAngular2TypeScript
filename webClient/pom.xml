@@ -43,13 +43,9 @@
                 <artifactId>maven-war-plugin</artifactId>
                 <version>2.3</version>
                 <configuration>
-                    <!--
-                    <webResources>
-                        <resource>
-                            <directory>${build.directory}/js/webapp</directory>
-                        </resource>
-                    </webResources>
-                    -->
+                    <warSourceDirectory>
+                        ${basedir}/src/
+                    </warSourceDirectory>
                 </configuration>
             </plugin>
         </plugins>

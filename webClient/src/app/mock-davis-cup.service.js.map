@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "mock-davis-cup.service.js",
+  "sourceRoot": "",
+  "sources": [
+    "mock-davis-cup.service.ts"
+  ],
+  "names": [],
+  "mappings": ";;;;;;;;;;;;;;;;;;;;;;YAIA;gBAAA;gBAKA,CAAC;gBAHG,0CAAY,GAAZ;oBACI,MAAM,CAAC,OAAO,CAAC,OAAO,CAAC,4BAAU,CAAC,CAAC;gBACvC,CAAC;gBALL;oBAAC,iBAAU,EAAE;;uCAAA;gBAMb,0BAAC;YAAD,CAAC,AALD,IAKC;YALD,qDAKC,CAAA"
+}

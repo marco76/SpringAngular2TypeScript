@@ -9,6 +9,7 @@
 *.class
 
 # Mobile Tools for Java (J2ME)
+/webClient/src/node_modules
 .mtj.tmp/
 
 # Package Files #

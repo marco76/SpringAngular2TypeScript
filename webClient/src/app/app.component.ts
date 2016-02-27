@@ -1,5 +1,5 @@
 import {Component, OnInit} from 'angular2/core';
-import {DavisCupService} from './davis-cup.service.ts';
+import {DavisCupService} from './davis-cup.service';
 import {DavisCup} from 'davisCup';
 import {HTTP_PROVIDERS}    from 'angular2/http';
 

@@ -1,5 +1,5 @@
 {
-  "name": "java-grunt",
+  "name": "angular2Java-seed",
   "version": "1.0.0",
   "scripts": {
     "start": "concurrent \"npm run tsc:w\" \"npm run lite\" ",
@@ -15,6 +15,7 @@
     "es6-promise": "^3.0.2",
     "es6-shim": "^0.33.3",
     "ng2-material": "^0.2.5",
+    "primeng": "^0.4.0",
     "reflect-metadata": "0.1.2",
     "rxjs": "5.0.0-beta.2",
     "systemjs": "0.19.22",
