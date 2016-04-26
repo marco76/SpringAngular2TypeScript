@@ -1,7 +1,8 @@
-import {Injectable} from '../../node_modules/angular2/core';
-import {Http, Response} from '../../node_modules/angular2/http';
+import {Injectable} from 'angular2/core';
+import {Http, Response} from 'angular2/http';
 import {DavisCup} from './../model/davisCup';
-import {Observable} from '../../node_modules/rxjs/Rx';
+import {Observable} from 'rxjs/Observable';
+import 'rxjs/Rx';
 
 @Injectable()
 export class DavisCupService {

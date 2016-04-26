@@ -1,5 +1,6 @@
-System.register(['angular2/platform/browser', './components/app.component', 'rxjs/add/operator/map'], function (exports_1) {
+System.register(['angular2/platform/browser', './components/app.component'], function (exports_1, context_1) {
     "use strict";
+    var __moduleName = context_1 && context_1.id;
     var browser_1, app_component_1;
     return {
         setters: [
@@ -8,8 +9,6 @@ System.register(['angular2/platform/browser', './components/app.component', 'rxj
             },
             function (app_component_1_1) {
                 app_component_1 = app_component_1_1;
-            },
-            function (_1) {
             }],
         execute: function () {
             browser_1.bootstrap(app_component_1.AppComponent);

@@ -17,7 +17,7 @@ public class DavisController {
 
 
     public DavisController() {
-       resultList.add(new DavisCup(2015, "Great Britain", "Belgium", "3-1"));
+        resultList.add(new DavisCup(2015, "Great Britain", "Belgium", "3-1"));
         resultList.add(new DavisCup(2014, "Switzerland", "France", "3-1"));
         resultList.add(new DavisCup(2013, "Czech Republic", "Serbia", "3-2"));
 

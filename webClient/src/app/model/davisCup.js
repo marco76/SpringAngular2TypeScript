@@ -1,9 +1,4 @@
-System.register([], function (exports_1) {
+define(["require", "exports"], function (require, exports) {
     "use strict";
-    return {
-        setters: [],
-        execute: function () {
-        }
-    }
 });
 //# sourceMappingURL=davisCup.js.map

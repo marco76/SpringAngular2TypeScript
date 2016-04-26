@@ -1,7 +1,7 @@
-import {Component, OnInit} from '../../node_modules/angular2/core';
+import {Component, OnInit} from 'angular2/core';
 import {DavisCupService} from './../services/davis-cup.service';
 import {DavisCup} from '../model/davisCup';
-import {HTTP_PROVIDERS}    from '../../node_modules/angular2/http';
+import {HTTP_PROVIDERS}    from 'angular2/http';
 
 
 @Component({

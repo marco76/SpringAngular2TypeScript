@@ -9,6 +9,18 @@
 *.class
 
 # Mobile Tools for Java (J2ME)
+/webClient/src/app/main.js.map
+/webClient/src/app/services/mock-davis-cups.js
+/webClient/src/app/services/mock-davis-cups.js.map
+/webClient/src/app/services/mock-davis-cup.service.js.map
+/webClient/src/app/services/mock-davis-cup.service.js
+/webClient/src/app/services/davis-cup.service.js
+/webClient/src/app/services/davis-cup.service.js.map
+/webClient/src/app/model/davisCup.js.map
+/webClient/src/app/model/davisCup.js
+/webClient/src/app/components/app.component.js.map
+/webClient/src/app/components/app.component.js
+/webClient/src/app/main.js
 /webClient/src/node_modules
 .mtj.tmp/
 
