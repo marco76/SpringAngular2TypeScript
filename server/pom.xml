@@ -67,7 +67,7 @@
                         </goals>
                         <phase>package</phase>
                         <configuration>
-                            <path>/angular2</path>
+                            <path>/</path>
                             <enableNaming>false</enableNaming>
                             <finalName>angular2.jar</finalName>
 
