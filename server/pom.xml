@@ -10,11 +10,9 @@
     <parent>
         <groupId>ch.javaee.demo</groupId>
         <artifactId>angular2</artifactId>
-        <version>0.1-SNAPSHOT</version>
+        <version>0.1.1-SNAPSHOT</version>
     </parent>
-
-
-    <dependencies>
+  <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
@@ -27,7 +25,7 @@
         <dependency>
             <groupId>ch.javaee.demo</groupId>
             <artifactId>client</artifactId>
-            <version>0.1-SNAPSHOT</version>
+            <version>0.1.1-SNAPSHOT</version>
             <type>war</type>
         </dependency>
 
@@ -43,18 +41,8 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
-            <plugin>
-                <artifactId>maven-antrun-plugin</artifactId>
-                <version>1.8</version>
-                <executions>
-                    <execution>
-                        <phase>generate-sources</phase>
-                        <configuration>
-
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
+            
+           
             <plugin>
                 <groupId>org.apache.tomcat.maven</groupId>
                 <artifactId>tomcat7-maven-plugin</artifactId>
@@ -70,8 +58,7 @@
                             <path>/</path>
                             <enableNaming>false</enableNaming>
                             <finalName>angular2.jar</finalName>
-
-                        </configuration>
+                      </configuration>
                     </execution>
                 </executions>
             </plugin>

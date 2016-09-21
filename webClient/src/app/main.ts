@@ -1,4 +1,9 @@
-import {bootstrap} from 'angular2/platform/browser'
-import {AppComponent} from './components/app.component'
+// runs directly in the browser, change for mobile
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+import { AppModule } from './app.module';
 
-bootstrap(AppComponent);
+
+const platform = platformBrowserDynamic();
+
+// bootstrap the AppModule
+platform.bootstrapModule(AppModule); 

@@ -1,4 +1,4 @@
-import {Injectable} from '../../node_modules/angular2/core';
+import {Injectable} from '@angular/core';
 import {DAVIS_CUPS} from './mock-davis-cups';
 
 @Injectable()

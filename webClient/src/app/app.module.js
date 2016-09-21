@@ -9,18 +9,21 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var mock_davis_cups_1 = require('./mock-davis-cups');
-var MockDavisCupService = (function () {
-    function MockDavisCupService() {
+var platform_browser_1 = require('@angular/platform-browser');
+var http_1 = require('@angular/http');
+var app_component_1 = require('./components/app.component');
+var AppModule = (function () {
+    function AppModule() {
     }
-    MockDavisCupService.prototype.getDavisCups = function () {
-        return Promise.resolve(mock_davis_cups_1.DAVIS_CUPS);
-    };
-    MockDavisCupService = __decorate([
-        core_1.Injectable(), 
+    AppModule = __decorate([
+        core_1.NgModule({
+            imports: [platform_browser_1.BrowserModule, http_1.HttpModule],
+            declarations: [app_component_1.AppComponent],
+            bootstrap: [app_component_1.AppComponent]
+        }), 
         __metadata('design:paramtypes', [])
-    ], MockDavisCupService);
-    return MockDavisCupService;
+    ], AppModule);
+    return AppModule;
 }());
-exports.MockDavisCupService = MockDavisCupService;
-//# sourceMappingURL=mock-davis-cup.service.js.map
+exports.AppModule = AppModule;
+//# sourceMappingURL=app.module.js.map

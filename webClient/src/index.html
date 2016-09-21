@@ -5,37 +5,17 @@
 
     <!-- IE required polyfills, in this exact order -->
     <!-- 1. Load libraries -->
-    <!-- IE required polyfills, in this exact order -->
-
-    <script src="node_modules/es6-shim/es6-shim.min.js"></script>
-    <script src="node_modules/systemjs/dist/system-polyfills.js"></script>
-    <script src="node_modules/angular2/bundles/angular2-polyfills.js"></script>
+     <!-- Polyfill(s) for older browsers -->
+    <script src="node_modules/core-js/client/shim.min.js"></script>
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="node_modules/reflect-metadata/Reflect.js"></script>
     <script src="node_modules/systemjs/dist/system.src.js"></script>
-    <script src="node_modules/rxjs/bundles/Rx.js"></script>
-    <script src="node_modules/angular2/bundles/angular2.dev.js"></script>
-
-    <script src="node_modules/typescript/lib/typescript.js"></script>
-    <script src="node_modules/angular2/bundles/http.dev.js"></script>
-
-
+    <!-- 2. Configure SystemJS -->
+    <script src="systemjs.config.js"></script>
     <script>
-        System.config({
-            transpiler: 'typescript',
-            typescriptOptions: {emitDecoratorMetadata: true},
-            defaultJSExtensions: true,
-            map: {
-                'rxjs': 'node_modules/rxjs',
-                'angular2': 'node_modules/angular2'
-            },
-            packages: {
-                app: {format: 'register', defaultExtension: 'js'},
-                'rxjs': {defaultExtension: 'js'}
-            }
-        });
-        System.import('app/main')
-                .then(null, console.error.bind(console));
+      System.import('app').catch(function(err){ console.error(err); });
     </script>
-
+  </head>
 </head>
 
 <body>

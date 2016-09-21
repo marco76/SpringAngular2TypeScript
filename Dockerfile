@@ -27,6 +27,8 @@ RUN git clone git://github.com/marco76/SpringAngular2TypeScript.git
 # install npm modules
 WORKDIR /usr/src/myapp/SpringAngular2TypeScript/webClient/src
 RUN npm install
+# compile typescript files
+RUN npm tsc
 #RUN npm run tsc:w 
 
 # package the application
