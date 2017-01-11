@@ -3,6 +3,9 @@ sudo: required
 env:
   - TRAVIS_NODE_VERSION="6"
   
+before_install:
+  - nvm install node
+  
 before_script:
 - curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
 - sudo apt-get install nodejs
