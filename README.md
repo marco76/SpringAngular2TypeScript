@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/marco76/SpringAngular2TypeScript.svg?branch=master)](https://travis-ci.org/marco76/SpringAngular2TypeScript)
+
 # SpringAngular2TypeScript
 
 This is an example of implementation of a 'Full Stack Web Application'.
