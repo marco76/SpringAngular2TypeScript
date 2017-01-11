@@ -14,12 +14,7 @@ You can find some comments here: http://javaee.ch/2016/02/23/spring-boot-angular
 You can test the application using the docker file in this directory.
 
 If you want to build from the sources:
-1. install node.js
-2. install typescript
-3. in the webClient/src/ directory there is the package.json.
-    Launch 'npm install' and 'npm run tsc'
-4. in the project directory execute 'mvn package'
+1. install maven and npm
+4. in the parent project directory execute 'mvn package'
 5. in the server/target directory execute 'java -jar angular2.jar'
 6. open your brower and visit 'localhost:8080'
-
-I will simplify the procedure soon.
