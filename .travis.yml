@@ -1,2 +1,2 @@
 language: java
-mvn clean package
+script: mvn clean package
