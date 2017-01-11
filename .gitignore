@@ -2,34 +2,16 @@
 /webClient/src/main/webapp/node_modules
 /server/target
 /webClient/target
-/webClient/npm-debug.log
-/client
+client
+node_modules/
 /.idea
-### Java template
-*.class
 
-# Mobile Tools for Java (J2ME)
-/webClient/src/app/main.js.map
-/webClient/src/app/services/mock-davis-cups.js
-/webClient/src/app/services/mock-davis-cups.js.map
-/webClient/src/app/services/mock-davis-cup.service.js.map
-/webClient/src/app/services/mock-davis-cup.service.js
-/webClient/src/app/services/davis-cup.service.js
-/webClient/src/app/services/davis-cup.service.js.map
-/webClient/src/app/model/davisCup.js.map
-/webClient/src/app/model/davisCup.js
-/webClient/src/app/components/app.component.js.map
-/webClient/src/app/components/app.component.js
-/webClient/src/app/main.js
-/webClient/src/node_modules
-.mtj.tmp/
+*.class
+*.js.map
+/src/*.js
+*.log
 
 # Package Files #
 *.jar
 *.war
 *.ear
-
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
-
-# Created by .ignore support plugin (hsz.mobi)
