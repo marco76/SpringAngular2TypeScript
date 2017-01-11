@@ -1,2 +1,4 @@
 language: java
+node_js:
+  - "6"
 script: mvn clean package
