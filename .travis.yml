@@ -1,6 +1,7 @@
 language: java
 sudo: required
 before_script:
-- npm install -g grunt-cli
-- npm install
+- curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
+- sudo apt-get install nodejs
+- sudo apt-get install build-essential
 script: mvn clean package
