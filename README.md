@@ -18,5 +18,5 @@ You can test the application using the docker file in this directory.
 If you want to build from the sources:
 - install maven and npm
 - in the parent project directory execute 'mvn package'
-- in the project server target directory execute 'java -jar angular2.jar'
+- in the project server target directory execute 'java -jar server-0.1.2-SNAPSHOT.war'
 - open your brower and visit 'localhost:8080'
