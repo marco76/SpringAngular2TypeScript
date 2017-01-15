@@ -2,19 +2,23 @@
 
 This is an example of implementation of a 'Full Stack Web Application'.
 Please note that this code is very experimental and continuosly modified.
-AngularJS 2 is still in beta and the intregration of all the stack (using maven, grunt, bower, ...) is not stable yet.
-
 - Spring Boot on the backend
-- AngularJS 2 Beta on the frontend
+- AngularJS 2 on the frontend
 - TypeScript as frontend language
+- packaging optimized by webpack
 
-It's mainly a test to verify the maturity of AngularJS 2 and how the technologies integrates together.
 You can find some comments here: http://javaee.ch/2016/02/23/spring-boot-angularjs-2-typescript-hello-world-tutorial/
 
-You can test the application using the docker file in this directory.
-
-If you want to build from the sources:
+Prerequisites:
 - install maven and npm
-- in the parent project directory execute 'mvn package'
-- in the project server target directory execute 'java -jar angular2.jar'
-- open your brower and visit 'localhost:8080'
+
+You can test the application using the docker file in this directory or
+for development:
+1. launch the backend spring boot application: ch.javaee.demo.angular2.Application, it runs in localhost:8082
+2. launch the webpack server for the frontend: npm start
+3. go on http://localhost:8080
+
+For the production (only one jar):
+1. in the parent project directory execute 'mvn package'
+2. in the project server target directory execute 'java -jar angular2.jar'
+3. open your browser and visit http://localhost:8082
