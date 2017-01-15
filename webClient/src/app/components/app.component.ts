@@ -1,7 +1,9 @@
 import {Component, OnInit} from '@angular/core';
 import {DavisCupService} from './../services/davis-cup.service';
 import {DavisCup} from '../model/davisCup';
+import {ConstantsService} from './../services/constants.service';
 import {HttpModule} from '@angular/http';
+import {Location} from '@angular/common';
 
 
 @Component({
@@ -15,7 +17,7 @@ import {HttpModule} from '@angular/http';
          </li>
       </ul>
     `,
-        providers: [HttpModule, DavisCupService]
+        providers: [HttpModule, DavisCupService, ConstantsService, Location]
     })
 
 

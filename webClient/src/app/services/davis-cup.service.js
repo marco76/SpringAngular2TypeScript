@@ -8,14 +8,16 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
-var http_1 = require('@angular/http');
-var Observable_1 = require('rxjs/Observable');
-require('rxjs/Rx');
+var core_1 = require("@angular/core");
+var http_1 = require("@angular/http");
+var Observable_1 = require("rxjs/Observable");
+require("rxjs/Rx");
+var constants_service_1 = require("./constants.service");
 var DavisCupService = (function () {
-    function DavisCupService(http) {
+    function DavisCupService(http, ConstantsService) {
         this.http = http;
-        this._davisUrl = 'http://localhost:8080/result_list'; // URL to web api
+        this.ConstantsService = ConstantsService;
+        this._davisUrl = this.ConstantsService.SERVER_URL + ':' + this.ConstantsService.SERVER_PORT + '/result_list'; // URL to web api
     }
     DavisCupService.prototype.getDavisCups = function () {
         return this.http.get(this._davisUrl)
@@ -28,11 +30,11 @@ var DavisCupService = (function () {
         console.log(error);
         return Observable_1.Observable.throw(error.json().error || 'Server error');
     };
-    DavisCupService = __decorate([
-        core_1.Injectable(), 
-        __metadata('design:paramtypes', [http_1.Http])
-    ], DavisCupService);
     return DavisCupService;
 }());
+DavisCupService = __decorate([
+    core_1.Injectable(),
+    __metadata("design:paramtypes", [http_1.Http, constants_service_1.ConstantsService])
+], DavisCupService);
 exports.DavisCupService = DavisCupService;
 //# sourceMappingURL=davis-cup.service.js.map

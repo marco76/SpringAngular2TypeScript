@@ -1,5 +1,7 @@
 /webClient/src/main/webapp/typings
 /webClient/src/main/webapp/node_modules
+/webClient/src/app/**/*.js
+/webClient/src/app/**/*.map
 /server/target
 /webClient/target
 client

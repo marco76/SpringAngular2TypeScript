@@ -3,13 +3,14 @@ import {Http, Response} from '@angular/http';
 import {DavisCup} from './../model/davisCup';
 import {Observable} from 'rxjs/Observable';
 import 'rxjs/Rx';
+import {ConstantsService} from './constants.service';
 
 @Injectable()
 export class DavisCupService {
+   
+     constructor (private http: Http, private ConstantsService: ConstantsService) {}
 
-    constructor (private http: Http) {}
-
-    private _davisUrl = 'http://localhost:8080/result_list';  // URL to web api
+    private _davisUrl =  this.ConstantsService.BACKEND_URL + '/result_list';  // URL to web api
     getDavisCups() {
         return this.http.get(this._davisUrl)
             .map(res => <DavisCup[]> res.json())

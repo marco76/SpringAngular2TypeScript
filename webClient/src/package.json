@@ -2,14 +2,11 @@
   "name": "angular2-java-spring-hello-world",
   "version": "1.0.0",
   "scripts": {
-    "start": "concurrent \"npm run tsc:w\" \"npm run lite\" ",
-    "tsc": "tsc",
-    "tsc:w": "tsc -w",
-    "lite": "lite-server",
-    "typings": "typings",
-    "postinstall": "typings install"
+    "start": "webpack-dev-server --inline --progress --port 8080",
+    "test": "karma start",
+    "build": "rimraf dist && webpack --config config/webpack.prod.js --progress --profile --bail"
   },
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "@angular/common": "2.4.2",
     "@angular/compiler": "2.4.2",
@@ -19,19 +16,34 @@
     "@angular/platform-browser-dynamic": "2.4.2",
     "@angular/router": "3.4.2",
     "@angular/upgrade": "2.4.2",
-    
     "core-js": "2.4.1",
-    "reflect-metadata": "0.1.9",
     "rxjs": "5.0.3",
-    "systemjs": "0.19.41",
-    "zone.js": "0.7.4",
-    "a2-in-memory-web-api": "0.1.17",
-    "bootstrap": "3.3.7"
+    "zone.js": "0.7.4"
   },
   "devDependencies": {
-    "concurrently": "3.1.0",
-    "lite-server": "2.2.2",
-    "typescript": "2.1.4",
-    "typings": "2.1.0"
+    "@types/jasmine": "2.5.35",
+    "@types/node": "6.0.45",
+    "angular2-template-loader": "0.6.0",
+    "awesome-typescript-loader": "3.0.0-beta.18",
+    "css-loader": "0.23.1",
+    "extract-text-webpack-plugin": "1.0.1",
+    "file-loader": "0.8.5",
+    "html-loader": "0.4.3",
+    "html-webpack-plugin": "2.15.0",
+    "jasmine-core": "2.4.1",
+    "karma": "1.2.0",
+    "karma-jasmine": "1.0.2",
+    "karma-phantomjs-launcher": "1.0.2",
+    "karma-sourcemap-loader": "0.3.7",
+    "karma-webpack": "1.8.0",
+    "null-loader": "0.1.1",
+    "phantomjs-prebuilt": "2.1.7",
+    "raw-loader": "0.5.1",
+    "rimraf": "2.5.2",
+    "style-loader": "0.13.1",
+    "typescript": "^2.1.5",
+    "webpack": "1.13.0",
+    "webpack-dev-server": "1.14.1",
+    "webpack-merge": "0.14.0"
   }
 }
