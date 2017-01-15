@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/marco76/SpringAngular2TypeScript.svg?branch=master)](https://travis-ci.org/marco76/SpringAngular2TypeScript)
+
 # SpringAngular2TypeScript
 
 This is an example of implementation of a 'Full Stack Web Application'.
@@ -20,5 +22,5 @@ for development:
 
 For the production (only one jar):
 1. in the parent project directory execute 'mvn package'
-2. in the project server target directory execute 'java -jar angular2.jar'
+2. in the project server target directory execute 'java -jar server-0.1.3-SNAPSHOT.war'
 3. open your browser and visit http://localhost:8082
