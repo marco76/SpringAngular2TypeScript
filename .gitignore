@@ -17,3 +17,12 @@ node_modules/
 *.jar
 *.war
 *.ear
+.extract/**/
+/server/angular2.iml
+/server/server.iml
+/server/.extract/
+/server/overlays/
+/webClient/webClient.iml
+/webClient/client.iml
+/SpringAngular2.iml
+/webClient/src/dist/
