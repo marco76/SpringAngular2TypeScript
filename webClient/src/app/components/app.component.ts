@@ -1,46 +1,23 @@
-import {Component, OnInit} from '@angular/core';
-import {DavisCupService} from './../services/davis-cup.service';
-import {DavisCup} from '../model/davisCup';
-import {ConstantsService} from './../services/constants.service';
+import {Component} from '@angular/core';
 import {HttpModule} from '@angular/http';
 import {Location} from '@angular/common';
 
+import {ConstantsService} from './../services/constants.service';
 
+
+/**
+ * router-outlet : placeholder for the 'template' of the target page
+ * https://angular.io/docs/ts/latest/api/router/index/RouterOutlet-directive.html
+ */
 @Component({
     selector: 'my-app',
     template: `
-      <h1>{{title}}</h1>
-      <h2>Spring + AngularJS 2 + TypeScript</h2>
-      <ul>
-          <li *ngFor="let davis of davisCups">
-              {{davis.year}} : {{davis.winner}} defeated {{davis.runnerUp}} {{davis.score}}
-         </li>
-      </ul>
+       <router-outlet></router-outlet>
     `,
-        providers: [HttpModule, DavisCupService, ConstantsService, Location]
+        providers: [HttpModule, ConstantsService, Location]
     })
 
+export class AppComponent {
 
-export class AppComponent implements OnInit{
-
-    constructor(private _davisService : DavisCupService){}
-
-    errorMessage: string;
-    davisCups : DavisCup[];
-    public title = 'Davis Cup Final Results';
-
-    getDavisCups(){
-
-       /* this._davisService.getDavisCups().then(davis => this.davisCups = davis)*/
-        this._davisService.getDavisCups().subscribe(
-            davis => this.davisCups = davis,
-            error =>  this.errorMessage = <any>error);
-    }
-
-    ngOnInit(){
-        this.getDavisCups();
-    }
-
-} // export -> create a module
-
+}
 
