@@ -36,5 +36,7 @@ RUN yes | cp -rf /usr/src/myapp/SpringAngular2TypeScript/server/target/server-0.
 #RUN catalina.sh start &
 
 ####
-# build with -t angular2-java-hello-world . 
-# run with docker run --rm -it -p 8080:8080  angular2-java-hello-world java -jar /usr/src/myapp/server-0.1.3-SNAPSHOT.war
+# build with:
+# docker -t angular2-java-hello-world .
+# run with:
+# docker run --rm -it -p 8080:8080  angular2-java-hello-world java -jar /usr/src/myapp/server-0.1.3-SNAPSHOT.war
