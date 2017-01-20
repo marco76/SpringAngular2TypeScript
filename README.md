@@ -14,13 +14,12 @@ You can find some comments here: http://javaee.ch/2016/02/23/spring-boot-angular
 Prerequisites:
 - install maven and npm
 
-You can test the application using the docker file in this directory or
-for development:
+####For development (js server + java server):
 1. launch the backend spring boot application: ch.javaee.demo.angular2.Application, it runs in localhost:8082
 2. launch the webpack server for the frontend: npm start
 3. go on http://localhost:8080
 
-For the production (only one jar):
+#####For production (only one war, souces optimized):
 1. in the parent project directory execute 'mvn package'
 2. in the project server target directory execute 'java -jar server-0.1.3-SNAPSHOT.war'
 3. open your browser and visit http://localhost:8082
