@@ -25,17 +25,10 @@ RUN apt-get install -y nodejs
 RUN git clone git://github.com/marco76/SpringAngular2TypeScript.git
 
 # install npm modules
-WORKDIR /usr/src/myapp/SpringAngular2TypeScript/webClient/src
-RUN npm install
-# compile typescript files
-RUN npm run tsc
-#RUN npm run tsc:w 
+WORKDIR /usr/src/myapp/SpringAngular2TypeScript/
+RUN mvn generate-resources package
 
-# package the application
-WORKDIR /usr/src/myapp/SpringAngular2TypeScript
-RUN mvn package
-
-RUN yes | cp -rf /usr/src/myapp/SpringAngular2TypeScript/server/target/angular2.jar /usr/src/myapp
+RUN yes | cp -rf /usr/src/myapp/SpringAngular2TypeScript/server/target/server-0.1.3-SNAPSHOT.war /usr/src/myapp
 
 # tomcat manual config
 #RUN yes | cp -rf /usr/src/myapp/SpringAngular2TypeScript/webClient/target/client-0.1-SNAPSHOT.war /usr/src/myapp/apache-tomcat-8.5.5/webapps/ROOT.war
@@ -44,4 +37,4 @@ RUN yes | cp -rf /usr/src/myapp/SpringAngular2TypeScript/server/target/angular2.
 
 ####
 # build with -t angular2-java-hello-world . 
-# run with docker run --rm -it -p 8080:8080  angular2-java-hello-world java -jar /usr/src/myapp/angular2.jar
+# run with docker run --rm -it -p 8080:8080  angular2-java-hello-world java -jar /usr/src/myapp/server-0.1.3-SNAPSHOT.war

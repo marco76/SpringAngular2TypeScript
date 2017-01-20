@@ -1,7 +1,9 @@
 // component decorator imported from @angular/core
-import { NgModule }      from '@angular/core';
+ import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpModule } from '@angular/http';
+
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 // Router Module: The router module allows the routing of the pages in our application
 // we need it to jump from the welcome page to another page
@@ -17,7 +19,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports:      [ BrowserModule,HttpModule, RouterModule.forRoot(routes) ],
+  imports:      [NgbModule.forRoot(), BrowserModule,HttpModule, RouterModule.forRoot(routes) ],
   declarations: [AppComponent, SampleComponent, DavisComponent],
   bootstrap: [AppComponent],
   providers: []

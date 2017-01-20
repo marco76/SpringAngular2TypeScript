@@ -1,5 +1,6 @@
 // Component is a decorator imported from @angular/core
 import {Component} from "@angular/core"
+import {NgbModule} from "@ng-bootstrap/ng-bootstrap";
 
 
 // use of the decorator to register the component
@@ -13,6 +14,13 @@ import {Component} from "@angular/core"
           </div>
           <br>
           <a [routerLink]="['/']"> Back to the results</a>
+          <div id="collapseExample" [ngbCollapse]="false">
+  <div class="card">
+    <div class="card-block">
+      You can collapse this card by clicking Toggle
+    </div>
+  </div>
+</div>
         `})
 // name of the component, exported to be reusable
 export class SampleComponent {

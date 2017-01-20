@@ -12,10 +12,13 @@
     "@angular/compiler": "2.4.2",
     "@angular/core": "2.4.2",
     "@angular/http": "2.4.2",
+    "@angular/forms": "2.4.2",
     "@angular/platform-browser": "2.4.2",
     "@angular/platform-browser-dynamic": "2.4.2",
     "@angular/router": "3.4.2",
     "@angular/upgrade": "2.4.2",
+    "@ng-bootstrap/ng-bootstrap": "^1.0.0-alpha.18",
+    "bootstrap": "4.0.0-alpha.6",
     "core-js": "2.4.1",
     "rxjs": "5.0.3",
     "zone.js": "0.7.4"

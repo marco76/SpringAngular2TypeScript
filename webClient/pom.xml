@@ -15,7 +15,6 @@
 
     </dependencies>
     <build>
-
         <plugins>
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
@@ -43,7 +42,7 @@
                             <executable>npm</executable>
                             <arguments>
                                 <argument>run</argument>
-                                 <argument>build</argument>
+                                <argument>build</argument>
                             </arguments>
                         </configuration>
                         <phase>generate-resources</phase>
@@ -65,5 +64,4 @@
             </plugin>
         </plugins>
     </build>
-
 </project>
