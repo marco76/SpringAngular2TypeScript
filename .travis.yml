@@ -12,3 +12,5 @@ before_script:
 - sudo apt-get install build-essential
 
 script: mvn clean package
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
