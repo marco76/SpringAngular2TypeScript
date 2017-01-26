@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/marco76/SpringAngular2TypeScript.svg?branch=master)](https://travis-ci.org/marco76/SpringAngular2TypeScript)
+[![Build Status](https://travis-ci.org/marco76/SpringAngular2TypeScript.svg?branch=master)](https://travis-ci.org/marco76/SpringAngular2TypeScript) [![codecov](https://codecov.io/gh/marco76/SpringAngular2TypeScript/branch/master/graph/badge.svg)](https://codecov.io/gh/marco76/SpringAngular2TypeScript)
 
 # SpringAngular2TypeScript
 
