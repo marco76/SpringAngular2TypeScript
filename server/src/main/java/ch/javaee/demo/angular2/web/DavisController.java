@@ -1,9 +1,10 @@
 package ch.javaee.demo.angular2.web;
 
 import ch.javaee.demo.angular2.model.DavisCup;
+import ch.javaee.demo.angular2.service.DavisService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -13,32 +14,20 @@ import java.util.List;
 @CrossOrigin()
 public class DavisController {
 
-    private List<DavisCup> resultList = new ArrayList<>();
-
-
-    public DavisController() {
-        resultList.add(new DavisCup(2015, "Great Britain", "Belgium", "3-1"));
-        resultList.add(new DavisCup(2014, "Switzerland", "France", "3-1"));
-        resultList.add(new DavisCup(2013, "Czech Republic", "Serbia", "3-2"));
-
-
-    }
+    @Autowired
+    protected DavisService davisService;
 
     @RequestMapping(value = "/result_list", method = RequestMethod.GET)
-    public @ResponseBody List<DavisCup> resultList(){
-        return resultList;
+    public @ResponseBody List<DavisCup> resultList() {
+
+        return davisService.getResultList();
+
     }
 
-    @RequestMapping("/result_year")
-    public @ResponseBody DavisCup result(@RequestParam(required = true, defaultValue = "2015") String year){
-        for (DavisCup current : resultList){
-            if (current.getYear().toString().equals(year)){
-                return current;
-            }
+    @RequestMapping(value = "/result_year", method = RequestMethod.GET)
+    public @ResponseBody DavisCup result(@RequestParam(value="year", defaultValue = "2015") String year) {
 
-        }
-        return null;
+        return davisService.getResultForYear(year);
+
     }
-
-
 }
