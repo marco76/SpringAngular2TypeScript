@@ -11,7 +11,7 @@ import 'rxjs/add/operator/catch';
 import 'rxjs/add/operator/map';
 
 // we store the service ressource in a constant
-const HELLO_WORLD_API : string = '/hello-world';
+const HELLO_WORLD_API : string = '/rest/hello-world';
 
 @Injectable()
 export class HelloWorldService {

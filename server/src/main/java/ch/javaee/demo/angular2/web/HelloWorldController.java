@@ -16,7 +16,7 @@ public class HelloWorldController {
     @Autowired
     protected HelloWorldService helloWorldService;
 
-    @RequestMapping(value = "/hello-world", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+    @RequestMapping(value = "/rest/hello-world", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
     Map<String, String> sayHello() {
 
         String helloWorld = helloWorldService.getHelloWorld();

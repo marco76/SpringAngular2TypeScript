@@ -62,7 +62,6 @@
                         <directory>src/dist</directory>
                    </resource>
                 </webResources></configuration>
-
             </plugin>
         </plugins>
     </build>

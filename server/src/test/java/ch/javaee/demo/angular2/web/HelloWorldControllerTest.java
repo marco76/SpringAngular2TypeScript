@@ -23,7 +23,7 @@ public class HelloWorldControllerTest {
 
         String expectedResult = "{\"content\":\"Hello World from Java!\"}";
 
-        this.mvc.perform(get("/hello-world"))
+        this.mvc.perform(get("/rest/hello-world"))
                 .andExpect(status().isOk())
                 .andExpect(content().string(expectedResult));
 

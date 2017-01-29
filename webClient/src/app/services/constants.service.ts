@@ -8,11 +8,13 @@ export class ConstantsService {
 
     constructor() {
 
-        this.BACKEND_URL = window.location.href;
+        console.log("process.env set to : " + process.env.ENV);
 
         // in DEV the frontend uses node.js, the backend uses a different port
-        if (!(process.env.ENV === 'production')) {
-            this.BACKEND_URL = location.protocol + '//' + location.hostname + ':' + this.BACKEND_PORT_DEV;
+        if (process.env.ENV === 'production') {
+            this.BACKEND_URL = window.location.protocol + '//' + window.location.hostname + ':' + window.location.port;
+        } else {
+            this.BACKEND_URL = window.location.protocol + '//' + window.location.hostname + ':' + this.BACKEND_PORT_DEV;
         }
 
         console.log("Server url set to: " + this.BACKEND_URL);
