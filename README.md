@@ -18,10 +18,10 @@ Prerequisites:
 
 ####For development (js server + java server):
 1. launch the backend spring boot application, it runs in localhost:8082
-    > java -jar [PARENT_MODULE]/server/target/server-0.14-SNAPSHOT.war
+    * java -jar [PARENT_MODULE]/server/target/server-0.14-SNAPSHOT.war
 2. launch the webpack server for the frontend: npm start
-    from [PARENT_MODULE]/webClient/src
-    > npm start
+    * from [PARENT_MODULE]/webClient/src
+    * npm start
 3. go on http://localhost:8080
 
 #####For production (only one war, souces optimized):
