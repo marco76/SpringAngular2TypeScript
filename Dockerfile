@@ -28,7 +28,7 @@ RUN git clone git://github.com/marco76/SpringAngular2TypeScript.git
 WORKDIR /usr/src/myapp/SpringAngular2TypeScript/
 RUN mvn generate-resources package
 
-RUN yes | cp -rf /usr/src/myapp/SpringAngular2TypeScript/server/target/server-0.1.3-SNAPSHOT.war /usr/src/myapp
+RUN yes | cp -rf /usr/src/myapp/SpringAngular2TypeScript/server/target/server-0.1.4-SNAPSHOT.war /usr/src/myapp
 
 # tomcat manual config
 #RUN yes | cp -rf /usr/src/myapp/SpringAngular2TypeScript/webClient/target/client-0.1-SNAPSHOT.war /usr/src/myapp/apache-tomcat-8.5.5/webapps/ROOT.war
