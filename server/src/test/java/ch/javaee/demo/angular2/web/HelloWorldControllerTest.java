@@ -21,7 +21,7 @@ public class HelloWorldControllerTest {
     @Test
     public void resultListTest() throws Exception {
 
-        String expectedResult = "{\"result\":\"Hello World from Java!\"}";
+        String expectedResult = "{\"content\":\"Hello World from Java!\"}";
 
         this.mvc.perform(get("/hello-world"))
                 .andExpect(status().isOk())

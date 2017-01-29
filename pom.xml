@@ -6,7 +6,7 @@
 
     <groupId>ch.javaee.demo</groupId>
     <artifactId>angular2</artifactId>
-    <version>0.1.3-SNAPSHOT</version>
+    <version>0.1.4-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <parent>

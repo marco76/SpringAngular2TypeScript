@@ -19,7 +19,6 @@ import {Location} from '@angular/common';
               {{davis.year}} : {{davis.winner}} defeated {{davis.runnerUp}} {{davis.score}}
          </li>
       </ul>
-      <a [routerLink]="['/sample']"> Open the welcome page</a>
       <br>
       <a [routerLink]="['/hello-world']"> A classic hello world!</a>
     `,
