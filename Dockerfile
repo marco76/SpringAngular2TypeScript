@@ -30,6 +30,7 @@ RUN mvn generate-resources package
 
 RUN yes | cp -rf /usr/src/myapp/SpringAngular2TypeScript/server/target/server-0.1.4-SNAPSHOT.war /usr/src/myapp
 
+CMD ["java", "-jar", "/usr/src/myapp/server-0.1.4-SNAPSHOT.war"]
 # tomcat manual config
 #RUN yes | cp -rf /usr/src/myapp/SpringAngular2TypeScript/webClient/target/client-0.1-SNAPSHOT.war /usr/src/myapp/apache-tomcat-8.5.5/webapps/ROOT.war
 #WORKDIR /usr/src/myapp/apache-tomcat-8.5.5/bin
