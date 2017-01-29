@@ -20,6 +20,8 @@ import {Location} from '@angular/common';
          </li>
       </ul>
       <a [routerLink]="['/sample']"> Open the welcome page</a>
+      <br>
+      <a [routerLink]="['/hello-world']"> A classic hello world!</a>
     `,
         providers: [HttpModule, DavisCupService, ConstantsService, Location]
     })

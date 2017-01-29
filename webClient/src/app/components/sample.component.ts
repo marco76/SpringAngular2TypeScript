@@ -6,7 +6,7 @@ import {NgbModule} from "@ng-bootstrap/ng-bootstrap";
 // use of the decorator to register the component
 @Component({
     // html element <hello> </hello>
-    selector : 'hello', // <- separated by coma, not semicolomn like in Java
+    selector : 'hello', // <- separated by comma, not semicolomn like in Java
     template : // the template can be inline or refer to an external file
         //multiline html template, we can use the defined variables {{ variable_name }}
         ` <div class="hello"> 

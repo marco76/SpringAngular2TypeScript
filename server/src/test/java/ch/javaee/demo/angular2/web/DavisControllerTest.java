@@ -2,11 +2,9 @@ package ch.javaee.demo.angular2.web;
 
 import ch.javaee.demo.angular2.model.DavisCup;
 import ch.javaee.demo.angular2.service.DavisService;
-import ch.javaee.demo.angular2.service.DavisServiceCodedImpl;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.mock.mockito.SpyBean;
 import org.springframework.test.context.junit4.SpringRunner;
