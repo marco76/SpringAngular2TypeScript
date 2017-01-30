@@ -4,14 +4,15 @@
 # SpringAngular2TypeScript
 
 This is an example of implementation of a 'Full Stack Web Application'.
-Please note that this code is very experimental and regularly modified:
+Please note that this code is very experimental and regularly modified.
+
+You can find the running app (deployed via docker) here: http://angular.cafe
+Information about the development of this example in the blog here: http://javaee.ch
 
 - Spring Boot on the backend
 - AngularJS 2 on the frontend
 - TypeScript as frontend language
 - packaging optimized by webpack
-
-You can find some comments here: http://javaee.ch/2016/02/23/spring-boot-angularjs-2-typescript-hello-world-tutorial/
 
 Prerequisites:
 - install maven and npm
