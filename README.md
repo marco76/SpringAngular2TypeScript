@@ -7,8 +7,10 @@ This is an example of implementation of a 'Full Stack Web Application'.
 Please note that this code is very experimental and regularly modified.
 
 You can find the running app (deployed via docker) here: http://angular.cafe
+
 Information about the development of this example in the blog here: http://javaee.ch
 
+Stack:
 - Spring Boot on the backend
 - AngularJS 2 on the frontend
 - TypeScript as frontend language
