@@ -17,6 +17,7 @@
         <java.version>1.8</java.version>
         <demo.version>0.1.4-SNAPSHOT</demo.version>
         <junit.version>4.12</junit.version>
+        <h2.version>1.4.193</h2.version>
     </properties>
 
     <dependencies>
@@ -45,9 +46,20 @@
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>
-                spring-boot-starter-test
-            </artifactId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+            <version>${h2.version}</version>
+        </dependency>
+
+        <!-- Test -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
         </dependency>
 
     </dependencies>
