@@ -13,16 +13,18 @@ import {AppComponent} from './components/app.component'
 import {SampleComponent} from "./components/sample.component";
 import {DavisComponent} from "./components/davis.component";
 import {HelloWorld} from "./components/hello-world.component"
+import {BlogComponent} from "./components/blog.component";
 
 const routes: Routes = [
     { path: '', component: DavisComponent},
     { path: 'sample', component: SampleComponent },
-    { path: 'hello-world', component: HelloWorld}
+    { path: 'hello-world', component: HelloWorld},
+    { path: 'blog', component:BlogComponent}
 ];
 
 @NgModule({
   imports:      [NgbModule.forRoot(), BrowserModule, HttpModule, RouterModule.forRoot(routes) ],
-  declarations: [AppComponent, SampleComponent, DavisComponent, HelloWorld],
+  declarations: [AppComponent, SampleComponent, DavisComponent, HelloWorld, BlogComponent],
   bootstrap:    [AppComponent],
   providers:    []
 })

@@ -3,6 +3,7 @@ package ch.javaee.demo.angular2.web;
 import ch.javaee.demo.angular2.model.blog.Article;
 import ch.javaee.demo.angular2.service.blog.BlogService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -18,11 +19,13 @@ public class BlogController {
     @Autowired
     BlogService blogService;
 
-    @RequestMapping(value = "/result_list", method = RequestMethod.GET)
+    @RequestMapping(value = "/blog/list", method = RequestMethod.GET)
     public @ResponseBody
         List<Article> resultList() {
 
         return blogService.getArticles();
 
     }
+
+
 }

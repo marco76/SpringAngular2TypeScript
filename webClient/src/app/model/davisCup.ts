@@ -3,5 +3,4 @@ export interface DavisCup{
      winner : string;
      runnerUp : string;
      score: string;
-
 }

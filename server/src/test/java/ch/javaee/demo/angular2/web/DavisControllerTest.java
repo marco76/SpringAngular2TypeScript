@@ -24,7 +24,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @WebMvcTest(DavisController.class)
 public class DavisControllerTest {
 
-    @SpyBean
+    @Autowired
     private DavisService davisService;
 
     @Autowired
