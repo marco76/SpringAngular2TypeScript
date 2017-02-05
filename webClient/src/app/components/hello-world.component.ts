@@ -12,8 +12,9 @@ import {JsonString} from "../model/JsonString"
             ` <div class="hello-java"> 
                 {{ helloWorldJava }}
           </div>
+          
           <br>
-          <a [routerLink]="['/']"> Back to the results</a>
+          <pre><code class="html">{{htmlCode}}</code></pre>
         `
         ,
         providers: [HelloWorldService] // the HelloWorldService has to be declared as provider
@@ -25,6 +26,7 @@ export class HelloWorld {
 
     // string to publish on the screen
     helloWorldJava : string;
+    htmlCode : string;
 
     constructor(helloWorldService : HelloWorldService){
 
@@ -34,6 +36,7 @@ export class HelloWorld {
                 // we receive a json object, we have to extract the string
                 this.helloWorldJava = data.content;
             });
+        this.htmlCode='<link rel="stylesheet" href="http://www.atlasestateagents.co.uk/css/tether.min.css">';
 
     }
 }
