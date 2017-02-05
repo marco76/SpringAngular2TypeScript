@@ -36,7 +36,7 @@ export class HelloWorld {
                 // we receive a json object, we have to extract the string
                 this.helloWorldJava = data.content;
             });
-        this.htmlCode='<link rel="stylesheet" href="http://www.atlasestateagents.co.uk/css/tether.min.css">';
+        this.htmlCode='';
 
     }
 }
