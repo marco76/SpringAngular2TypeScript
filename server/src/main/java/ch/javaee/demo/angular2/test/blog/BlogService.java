@@ -1,7 +1,6 @@
-package ch.javaee.demo.angular2.service.blog;
+package ch.javaee.demo.angular2.test.blog;
 
 import ch.javaee.demo.angular2.model.blog.Article;
-import org.springframework.stereotype.Service;
 
 import java.util.List;
 

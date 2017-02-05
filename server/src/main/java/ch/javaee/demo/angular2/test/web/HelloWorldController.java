@@ -1,7 +1,6 @@
-package ch.javaee.demo.angular2.web;
+package ch.javaee.demo.angular2.test.web;
 
 import ch.javaee.demo.angular2.service.HelloWorldService;
-import com.fasterxml.jackson.annotation.JsonValue;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;

@@ -1,9 +1,8 @@
-package ch.javaee.demo.angular2.web;
+package ch.javaee.demo.angular2.test.web;
 
 import ch.javaee.demo.angular2.model.blog.Article;
-import ch.javaee.demo.angular2.service.blog.BlogService;
+import ch.javaee.demo.angular2.test.blog.BlogService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;

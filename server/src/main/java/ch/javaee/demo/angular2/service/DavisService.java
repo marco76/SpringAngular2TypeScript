@@ -1,7 +1,6 @@
 package ch.javaee.demo.angular2.service;
 
 import ch.javaee.demo.angular2.model.DavisCup;
-import org.springframework.stereotype.Service;
 
 import java.util.List;
 

@@ -11,7 +11,7 @@ import {ConstantsService} from './../services/constants.service';
  */
 @Component({
     selector: 'my-app',
-    template: `
+    template: `<bootstrap-menu></bootstrap-menu>
        <router-outlet></router-outlet>
     `,
         providers: [HttpModule, ConstantsService, Location]

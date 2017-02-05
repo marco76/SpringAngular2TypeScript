@@ -1,26 +1,26 @@
 import {Component, OnInit} from '@angular/core';
-import {DavisCupService} from './../services/davis-cup.service';
-import {DavisCup} from '../model/davisCup';
 import {ConstantsService} from './../services/constants.service';
 import {HttpModule} from '@angular/http';
 import {Location} from '@angular/common';
 import {BlogService} from "../services/blog.service";
 import {BlogArticle} from "../model/blogArticle";
 
-/**
- * routerLink replaces ng-link. Use it to navigate between pages.
- */
-
 @Component({
     selector: 'rest-get-example',
     template: `
        <ul>
-          <li *ngFor="let article of blogArticles">
+          <span *ngFor="let article of blogArticles">
+          <div class="panel panel-default">
+          <div class="panel-heading">
               {{article.id}} : {{article.title}}
-         </li>
+              </div>
+           <div class="panel-body">
+             {{article.content}}
+              </div>
+              </div>
+         </span>
       </ul>
       <br>
-      <a [routerLink]="['/hello-world']"> A classic hello world!</a>
     `,
         providers: [HttpModule, BlogService, ConstantsService, Location]
     })

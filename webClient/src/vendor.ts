@@ -8,3 +8,9 @@ import '@angular/router';
 
 // RxJS
 import 'rxjs';
+
+// bootstrap
+import 'jquery';
+import 'bootstrap/dist/js/bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'highlightjs';

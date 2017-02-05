@@ -37,7 +37,9 @@ module.exports = {
         test: /\.css$/,
         include: helpers.root('src', 'app'),
         loader: 'raw'
-      }
+      },
+        { test: /\.scss$/,
+            loaders: ['style', 'css', 'postcss', 'sass'] }
     ]
   },
 
@@ -48,6 +50,12 @@ module.exports = {
 
     new HtmlWebpackPlugin({
       template: 'index.html'
-    })
+    }),
+
+      new webpack.ProvidePlugin({
+          jQuery: 'jquery',
+          $: 'jquery',
+          jquery: 'jquery'
+      })
   ]
 };

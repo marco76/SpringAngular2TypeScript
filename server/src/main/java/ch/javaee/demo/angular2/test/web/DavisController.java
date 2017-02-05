@@ -1,4 +1,4 @@
-package ch.javaee.demo.angular2.web;
+package ch.javaee.demo.angular2.test.web;
 
 import ch.javaee.demo.angular2.model.DavisCup;
 import ch.javaee.demo.angular2.service.DavisService;
