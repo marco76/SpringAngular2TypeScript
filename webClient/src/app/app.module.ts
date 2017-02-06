@@ -14,16 +14,21 @@ import {BlogComponent} from "./components/blog.component";
 import {MenuComponent} from "./components/menu.component";
 
 import "./../css/main.css";
+import {HighlightCodeDirective} from "./directives/highlight.directive";
+import {D3Component} from "./components/d3.component";
 
 const routes: Routes = [
     { path: '', component: BlogComponent},
     { path: 'hello-world', component: HelloWorld},
-    { path: 'davis', component:DavisComponent}
+    { path: 'davis', component:DavisComponent},
+    { path: 'd3-example', component:D3Component}
 ];
 
 @NgModule({
   imports:      [BrowserModule, HttpModule, RouterModule.forRoot(routes) ],
-  declarations: [AppComponent, DavisComponent, HelloWorld, BlogComponent, MenuComponent],
+  declarations: [AppComponent, DavisComponent, HelloWorld, BlogComponent, MenuComponent, HighlightCodeDirective,
+      D3Component
+],
   bootstrap:    [AppComponent],
   providers:    []
 })

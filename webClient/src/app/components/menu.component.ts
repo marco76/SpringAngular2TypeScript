@@ -14,5 +14,4 @@ export class MenuComponent {
     constructor(){
 
     }
-
 }

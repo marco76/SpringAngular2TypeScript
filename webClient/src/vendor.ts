@@ -13,4 +13,15 @@ import 'rxjs';
 import 'jquery';
 import 'bootstrap/dist/js/bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import 'highlightjs';
+
+// highlight
+import 'highlight.js';
+import 'highlight.js/lib/highlight';
+import 'highlight.js/lib/languages/java';
+import 'highlight.js/lib/languages/json';
+import 'highlight.js/styles/darcula.css';
+import 'highlight.js/styles/idea.css';
+
+// d3.js
+import 'd3/build/d3.min';
+import 'd3-scale/build/d3-scale.min';
