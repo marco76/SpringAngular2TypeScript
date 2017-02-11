@@ -21,36 +21,21 @@ import {Location} from '@angular/common';
         .None
     })
 
-
 export class D3Component implements OnInit, AfterViewInit{
 
     constructor(){}
 
-
-    errorMessage: string;
-
     ngOnInit(){
     }
 
-
     ngAfterViewInit() {
         var data = [10, 20 ,30 ,15, 4, 26, 33];
-        /**
-         * d3.select(".chart")
-         .selectAll("div")
-         .data(data)
-         .enter().append("div")
-         .style("width", function(d) { return x(d) + "px"; })
-         .text(function(d) { return d; });
-         */
-        d3.select(".chart")
+           d3.select(".chart")
             .selectAll("div")
             .data(data)
             .enter().append("div")
             .style("width", function(d) { return d*10 + "px"; })
             .text(function(d) { return d; });
     }
-
-} // export -> create a module
-
+}
 

@@ -42,7 +42,6 @@ export class BlogComponent implements OnInit, AfterViewInit{
 
     errorMessage: string;
     blogArticles : BlogArticle[];
-    render : string;
 
     getArticleList(){
 
