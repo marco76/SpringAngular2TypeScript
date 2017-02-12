@@ -17,6 +17,7 @@ import {ImageComponent} from './components/image.component';
 
 import './../css/main.css';
 import {HighlightCodeDirective} from './directives/highlight.directive';
+import {HighlightComponent} from "./components/highlight.component";
 
 
 const routes: Routes = [
@@ -24,13 +25,15 @@ const routes: Routes = [
     { path: 'hello-world', component: HelloWorld},
     { path: 'davis', component:DavisComponent},
     { path: 'd3-example', component:D3Component},
-    { path: 'simple-image', component: ImageComponent}
+    { path: 'simple-image', component: ImageComponent},
+    { path: 'highlight-example', component: HighlightComponent}
+
 ];
 
 @NgModule({
   imports:      [BrowserModule, HttpModule, RouterModule.forRoot(routes) ],
   declarations: [AppComponent, DavisComponent, HelloWorld, BlogComponent, MenuComponent, HighlightCodeDirective,
-      D3Component, ImageComponent
+      D3Component, ImageComponent, HighlightComponent
 ],
   bootstrap:    [AppComponent],
   providers:    []
