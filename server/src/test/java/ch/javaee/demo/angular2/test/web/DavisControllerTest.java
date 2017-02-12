@@ -2,6 +2,7 @@ package ch.javaee.demo.angular2.test.web;
 
 import ch.javaee.demo.angular2.model.DavisCup;
 import ch.javaee.demo.angular2.service.DavisService;
+import ch.javaee.demo.angular2.web.DavisController;
 import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;

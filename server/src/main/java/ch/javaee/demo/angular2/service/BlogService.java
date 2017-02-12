@@ -1,4 +1,4 @@
-package ch.javaee.demo.angular2.test.blog;
+package ch.javaee.demo.angular2.service;
 
 import ch.javaee.demo.angular2.model.blog.Article;
 

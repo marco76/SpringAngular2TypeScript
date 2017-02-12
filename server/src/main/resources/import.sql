@@ -1,5 +1,7 @@
 -- this script is executed automatically by Spring Boot
 
+INSERT INTO ARTICLE(TITLE, ORIGINALLINK) VALUES ('Send an image from the Java backend to Angular using REST services', 'http://javaee.ch/2017/02/11/send-and-image-from-the-java-backend-to-angular-using-rest-services/');
+INSERT INTO ARTICLE(TITLE, ORIGINALLINK) VALUES ('Angular and D3.js – tutorial', 'http://javaee.ch/2017/02/10/angular-and-d3-js-tutorial/');
 INSERT INTO ARTICLE(TITLE, ORIGINALLINK) VALUES ('Configure Bootstrap with Angular 2, Webpack and Spring – Tutorial', 'http://javaee.ch/2017/02/06/configure-bootstrap-with-angular-2-webpack-and-spring-tutorial/');
 INSERT INTO ARTICLE(TITLE, ORIGINALLINK) VALUES ('Spring Boot and JPA. How to configure and test a memory database (H2) – Tutorial', 'http://javaee.ch/2017/02/02/spring-boot-how-to-configure-and-tests-a-memory-database-h2-tutorial/');
 INSERT INTO ARTICLE(TITLE, ORIGINALLINK) VALUES ('Cheap and easy DevOps for developers (Docker, Ubuntu, Apache and Spring)', 'http://javaee.ch/2017/01/30/devops-for-the-poor-docker-ubuntu-apache-and-spring/');

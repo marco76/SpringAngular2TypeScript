@@ -1,7 +1,8 @@
-package ch.javaee.demo.angular2.test.blog;
+package ch.javaee.demo.angular2.service;
 
 import ch.javaee.demo.angular2.model.blog.Article;
 import ch.javaee.demo.angular2.repository.blog.ArticleRepository;
+import ch.javaee.demo.angular2.service.BlogService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
