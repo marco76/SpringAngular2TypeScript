@@ -60,6 +60,7 @@
                 <webResources>
                     <resource>
                         <directory>src/dist</directory>
+                        <targetPath>static</targetPath>
                    </resource>
                 </webResources></configuration>
             </plugin>

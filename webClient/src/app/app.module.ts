@@ -22,11 +22,11 @@ import {HighlightComponent} from "./components/highlight.component";
 
 const routes: Routes = [
     { path: '', component: BlogComponent},
-    { path: 'hello-world', component: HelloWorld},
-    { path: 'davis', component:DavisComponent},
-    { path: 'd3-example', component:D3Component},
-    { path: 'simple-image', component: ImageComponent},
-    { path: 'highlight-example', component: HighlightComponent}
+    { path: 'app-hello-world', component: HelloWorld},
+    { path: 'app-davis', component:DavisComponent},
+    { path: 'app-d3-example', component:D3Component},
+    { path: 'app-simple-image', component: ImageComponent},
+    { path: 'app-highlight-example', component: HighlightComponent}
 
 ];
 

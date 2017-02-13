@@ -11,10 +11,8 @@ import {JsonString} from "../model/JsonString"
         //multiline html template, we can use the defined variables {{ variable_name }}
             ` <div class="hello-java"> 
                 {{ helloWorldJava }}
-          </div>
-          
-          <br>
-        `
+          </div>      
+         `
         ,
         providers: [HelloWorldService] // the HelloWorldService has to be declared as provider
     }
