@@ -8,15 +8,17 @@ import {BlogArticle} from "../model/blogArticle";
 @Component({
     selector: 'rest-get-example',
     template: `
-    <div class="row">
-    <div class="col-md-10">
+      <div class="row">
+    <div class="col-md-9">
     <div class="text-center">
       <h3>List of posts published on JavaEE.ch about the Angular/Java stack</h3>
-      </div></div>
       </div>
+      </div>
+      
+     </div>
       <br>
       <div class="row">
-       <div class="col-md-10">
+       <div class="col-md-9">
        <ul>
           <span *ngFor="let article of blogArticles">
           <div class="panel panel-default">
@@ -29,6 +31,9 @@ import {BlogArticle} from "../model/blogArticle";
               
          </span>
       </ul>
+      </div>
+      <div class="col-md-2">
+          <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="vertical" data-theme="light" data-vanity="javaee"><a class="LI-simple-link" href='https://ch.linkedin.com/in/javaee?trk=profile-badge'>Marco Molteni</a></div>
       </div>
       <br>
     `,
