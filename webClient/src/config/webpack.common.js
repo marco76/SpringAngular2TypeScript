@@ -11,7 +11,7 @@ module.exports = {
   },
 
   resolve: {
-    extensions: ['', '.ts', '.js']
+    extensions: ['.ts', '.js']
   },
 
   module: {
@@ -23,28 +23,22 @@ module.exports = {
 
       {
         test: /\.html$/,
-        loader: 'html'
+        loader: 'html-loader'
       },
       {
         test: /\.(png|jpe?g|gif|svg|woff|woff2|ttf|eot|ico)$/,
-        loader: 'file?name=assets/[name].[hash].[ext]'
+        loader: 'file-loader?name=assets/[name].[hash].[ext]'
       },
-      {
-        test: /\.css$/,
-        exclude: helpers.root('src', 'app'),
-        loader: ExtractTextPlugin.extract('style', 'css?sourceMap')
-      },
-      {
-        test: /\.css$/,
-        include: helpers.root('src', 'app'),
-        loader: 'raw'
-      },
+
+
+      { test: /\.css$/, loader: "style-loader!css-loader" },
         { test: /\.scss$/,
             loaders: ['style', 'css', 'postcss', 'sass'] }
     ]
   },
 
   plugins: [
+
     new webpack.optimize.CommonsChunkPlugin({
       name: ['app', 'vendor', 'polyfills']
     }),

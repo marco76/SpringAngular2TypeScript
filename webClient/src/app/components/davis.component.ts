@@ -20,6 +20,7 @@ import {Location} from '@angular/common';
          </li>
       </ul>
       <br>
+      <p>This is the first page created, still here for historical reasons.</p>
     `,
         providers: [HttpModule, DavisCupService, ConstantsService, Location]
     })

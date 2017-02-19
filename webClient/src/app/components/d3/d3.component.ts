@@ -1,5 +1,5 @@
 import {Component, OnInit, AfterViewInit, ViewEncapsulation} from '@angular/core';
-import {ConstantsService} from './../services/constants.service';
+import {ConstantsService} from '../../services/constants.service';
 import * as d3 from "d3";
 import * as d3scale from "d3-scale";
 import {Location} from '@angular/common';
@@ -7,7 +7,7 @@ import {Location} from '@angular/common';
 
 @Component({
     selector: 'd3-example',
-    templateUrl:'../html/d3.html',
+    templateUrl:'d3.html',
     providers: [ConstantsService, Location],
     styles:[`.chart div {
     font: 10px sans-serif;

@@ -9,9 +9,18 @@ import {JsonString} from "../model/JsonString"
         selector: 'hello-java', // <- separated by comma, not semicolomn like in Java
         template: // the template can be inline or refer to an external file
         //multiline html template, we can use the defined variables {{ variable_name }}
-            ` <div class="hello-java"> 
-                {{ helloWorldJava }}
-          </div>      
+            ` 
+            <div class = "container">
+            <div class="row">
+            The next sentence comes directly from Java via a REST Service
+            </div>
+            
+            <div class = "row" style="margin-top: 3em">
+            <div class="hello-java"> 
+            <blockquote>  {{ helloWorldJava }} </blockquote>
+              </div>
+          </div> 
+               </div>
          `
         ,
         providers: [HelloWorldService] // the HelloWorldService has to be declared as provider
