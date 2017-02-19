@@ -12,12 +12,16 @@ import {DavisComponent} from './components/davis.component';
 import {HelloWorld} from './components/hello-world.component';
 import {BlogComponent} from './components/blog.component';
 import {MenuComponent} from './components/menu.component';
-import {D3Component} from './components/d3.component';
+import {D3Component} from './components/d3/d3.component';
 import {ImageComponent} from './components/image.component';
 
 import './../css/main.css';
 import {HighlightCodeDirective} from './directives/highlight.directive';
-import {HighlightComponent} from "./components/highlight.component";
+import {HighlightComponent} from "./components/highlight/highlight.component";
+import {CvMain} from "./model/cvMain";
+import {CvMainComponent} from "./components/cv/cv.component";
+import {CvExperience} from "./components/cv/cv-experience.component";
+import {CvOldComponent} from "./components/cv-old/cv-old.component";
 
 
 const routes: Routes = [
@@ -26,14 +30,16 @@ const routes: Routes = [
     { path: 'app-davis', component:DavisComponent},
     { path: 'app-d3-example', component:D3Component},
     { path: 'app-simple-image', component: ImageComponent},
-    { path: 'app-highlight-example', component: HighlightComponent}
+    { path: 'app-highlight-example', component: HighlightComponent},
+    { path: 'app-cv', component: CvMainComponent},
+    { path: 'app-cv-old', component: CvOldComponent}
 
 ];
 
 @NgModule({
   imports:      [BrowserModule, HttpModule, RouterModule.forRoot(routes) ],
   declarations: [AppComponent, DavisComponent, HelloWorld, BlogComponent, MenuComponent, HighlightCodeDirective,
-      D3Component, ImageComponent, HighlightComponent
+      D3Component, ImageComponent, HighlightComponent, CvMainComponent, CvExperience, CvOldComponent
 ],
   bootstrap:    [AppComponent],
   providers:    []

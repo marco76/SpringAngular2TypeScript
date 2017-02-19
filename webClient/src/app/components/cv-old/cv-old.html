@@ -1,0 +1,144 @@
+<div id="doc2" class="yui-t7" ng-cloak>
+    <div id="inner" class="inner-border">
+        <div id="hd">
+            <div class="yui-gc">
+                <div class="yui-u first">
+                    <h1>{{profile.name}}</h1>
+                    <h2>{{profile.role}}</h2>
+
+                    <div style="padding-top: 0.5em" class="no-print">
+                     </div>
+
+                    <div class="noScreen">
+                        moltenma<span style="display:none">-anti-bot-bit</span>@gmail.com
+                    </div>
+
+                </div>
+
+                <div class="yui-u">
+                    <div class="contact-info">
+
+                       <!-- <img src="/assets/marco.jpg" width="70px" height="auto" style="object-fit: fill"> -->
+
+                    </div>
+                    <div>
+                        <div class="contact">{{profile.nationality}}, {{profile.age}} y.o.</div>
+                        <div class="contact">{{profile.address}}</div>
+
+
+                    </div><!--// .contact-info -->
+                </div>
+            </div><!--// .yui-gc -->
+        </div><!--// hd -->
+
+        <div id="bd">
+            <div id="yui-main">
+                <div class="yui-b">
+
+                    <div class="yui-gf">
+                        <div class="yui-u first">
+                            <h2>In 2 lines</h2>
+                        </div>
+                        <div class="yui-u">
+                            <p class="enlarge">
+                                {{profile.in_short}}
+                            </p>
+                        </div>
+                    </div><!--// .yui-gf -->
+
+                    <div class="yui-gf">
+                        <div class="yui-u first">
+                            <h2>Skills</h2>
+                        </div>
+                        <div class="yui-u">
+<!--
+                            <div class="talent">
+                                <h2>{{profile['talents'][0].title}}</h2>
+                                <p>{{profile['talents'][1].description}}</p>
+                            </div>
+
+                            <div class="talent">
+                                <h2>{{profile['talents'][1].title}}</h2>
+                                <p>{{profile['talents'][1].description}}</p>
+                            </div>
+                            <div class="talent">
+                                <h2>{{profile['talents'][2].title}}</h2>
+                                <p>{{profile['talents'][2].description}}</p>
+                            </div>
+                        </div>
+                        -->
+                    </div><!--// .yui-gf -->
+
+
+                    <div class="yui-gf">
+
+                        <div class="yui-u first">
+                            <h2>Experience</h2>
+                        </div><!--// .yui-u -->
+
+                        <div class="yui-u">
+                            <div ng-repeat=" job in profile.experience">
+                                <div ng-class="!$last ? 'job' : 'job last'">
+                                    <h2>{{job?.title}}</h2>
+                                    <h3>{{job?.company}}</h3>
+
+                                    <h4>{{job?.years}}</h4>
+                                    <p class="job-description">{{job?.results}} </p>
+                                    <p>Technologies: {{job?.technologies}}</p>
+                                </div>
+                            </div>
+
+                        </div><!--// .yui-u -->
+                    </div><!--// .yui-gf -->
+                    <div class="yui-gf">
+                        <div class="yui-u first">
+                            <h2>I worked with ...</h2>
+                        </div>
+                        <div class="yui-u">
+                            {{profile.worked_with}}
+                        </div>
+                    </div><!--// .yui-gf -->
+
+                    <div class="yui-gf">
+                        <div class="yui-u first">
+                            <h2>Open Source</h2>
+                        </div>
+                        <div class="yui-u">
+                            <div ng-bind-html="profile.opensource"></div>
+                        </div>
+                    </div><!--// .yui-gf -->
+                    <div class="yui-gf">
+                        <div class="yui-u first">
+                            <h2>Degrees</h2>
+                        </div>
+                        <div class="yui-u">
+                            {{profile.degrees}}
+                        </div>
+                    </div><!--// .yui-gf -->
+
+                    <div class="yui-gf">
+                        <div class="yui-u first">
+                            <h2>Still learning (past 3 y.)</h2>
+                        </div>
+                        <div class="yui-u">
+                            <div ng-bind-html="profile.certifications"></div>
+                        </div>
+                    </div>
+                </div><!--// .yui-gf -->
+
+                <div class="yui-gf last">
+                    <div class="yui-u first">
+                        <h2>You can talk to me in ...</h2>
+                    </div>
+                    <div class="yui-u">
+                        {{profile.languages}}
+                    </div>
+                </div><!--// .yui-gf -->
+
+
+            </div><!--// .yui-b -->
+        </div><!--// yui-main -->
+    </div><!--// bd -->
+
+
+</div><!-- // inner -->

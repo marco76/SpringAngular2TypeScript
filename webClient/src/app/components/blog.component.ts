@@ -12,6 +12,7 @@ import {BlogArticle} from "../model/blogArticle";
     <div class="col-md-9">
     <div class="text-center">
       <h3>List of posts published on JavaEE.ch about the Angular/Java stack</h3>
+      <p>This site shows some code of javaee.ch is only for educational purposes. The code is available on github.</p>
       </div>
       </div>
       

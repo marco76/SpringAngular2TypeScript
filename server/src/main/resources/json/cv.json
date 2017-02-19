@@ -1,0 +1,33 @@
+{
+  "name" : "Marco Molteni",
+  "currentTitle" : "Java and Angular Consultant",
+  "experience" : [
+    {"company" : "SBB / CFF / FFS", "contract" : "contract", "place" : "Bern", "title" : "Java and Angular Developer", "period" : "10.2016 - current", "description":"Development and deployment of pleasant applications with great usability for the Swiss national railway company. Helped to eliminate paper, excel and mainframe processes.",
+    "technologies":"Spring Boot, Angular JS, Red Hat OpenShift (DevOps), Oracle DB, Java, JSON"},
+
+    {"company" : "Hewlett Packard (HPE)","contract" : "contract", "place":"Bern", "title" : "Java EE Consultant", "period" : "05.2016 - 09.2016",
+    "description": "Development of RESTful Web Services for the communication between the mobile App of the Berner Kantonalbank (BEKB) and the HPE banking solution (CyberIbis). Choice of the patterns for a clean and extensible code and automation of the tests using Soap UI.",
+    "technologies":"Java EE, Weblogic, Oracle, Struts 2, JSF (RichFaces), Soap UI, REST Services (Jax-RS), Scrum"},
+
+    {"company" : "Appian Corporation","contract" : "contract", "place":"EMEA", "title" : "Senior Consultant BPM", "period" : "07.2015 - 12.2015",
+      "description": "Implementation of BPM solutions for financial institutions in Europe and USA. Enjoyed to help the clients to find the best options in the management of credits and mortgages risks.",
+      "technologies":"Appian BPM, JBoss, MySQL, DB2, Java, BPMN, Web Services, Scrum"},
+
+    {"company" : "SITel – Staat Freibourg","contract" : "contract", "place":"Fribourg", "title" : "Java Developer & Project Manager", "period" : "09.2009 - 06.2015",
+      "description": "Developement of the debt enforcement product (THEMIS) currently is in production in 5 Swiss Cantonal administrations. SPOC and problem-solver for some clients. Animation of business and technical workshops. Built an ETL for a (super fast) migration of 30 years of inconsistent data to a new shiny solution. Development of web services for the E-Government. Financial and technical responsibilty for a 1.7M CHF project (7 developers, 150 users) with happy end."
+    ,
+      "technologies":"Java, Spring, JDBC, Struts, JavaFX, Javascript, MSSQL (T- SQL), Apache CXF (JAX-WS), RUP"},
+
+    {"company" : "Norkom Technologies (BAE Systems)","contract" : "contract", "place":"Belgium - EMEA", "title" : "Senior Technical Consultant (Java / AML) & Project Manager", "period" : "09.2007 - 06.2009",
+      "description": "Java development (customizations), analysis, onsite integration of our anti-money-laundering solution for some of the major financial institutions in Europe. SPOC for some of our clients and partners. Project Management (projects < 200'000 EUR, 5-7 people). Norkom it today part of BAE Systems."
+    ,
+      "technologies":"Java EE, WebSphere, JBoss, Weblogic, Spring, JMS, Hibernate, AIX, Oracle DB, SQLServer, Struts"},
+
+    {"company" : "Cross Systems SA, Delphisoft SA, SkyGuide SA","contract" : "contract", "place":"Geneva", "title" : "Java / J2EE Consultant", "period" : "05.2001 - 08.2007",
+      "description": "Java Development for multiple projects / clients, mainly public administration (justice, population etc) and government services (SkyGuide - aviation)."
+    ,
+      "technologies":"Java/J2EE, Swing, Oracle DB, PL/SQL, JSF, Struts, JSP"}
+
+
+  ]
+}
