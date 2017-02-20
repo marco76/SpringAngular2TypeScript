@@ -1,5 +1,7 @@
 -- this script is executed automatically by Spring Boot
 
+INSERT INTO ARTICLE(TITLE, ORIGINALLINK) VALUES ('Faster Angular application with Spring Boot and Tomcat', 'http://javaee.ch/2017/02/20/better-performance-with-smaller-and-faster-angular-applications-using-spring-boot-and-tomcat/');
+
 INSERT INTO ARTICLE(TITLE, ORIGINALLINK) VALUES ('Add highlight.js to an Angular 2 application', 'http://javaee.ch/2017/02/13/add-highlight-js-to-an-angular-2-application/');
 
 INSERT INTO ARTICLE(TITLE, ORIGINALLINK) VALUES ('Send an image from the Java backend to Angular using REST services', 'http://javaee.ch/2017/02/11/send-and-image-from-the-java-backend-to-angular-using-rest-services/');
