@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/marco76/SpringAngular2TypeScript.svg?branch=master)](https://travis-ci.org/marco76/SpringAngular2TypeScript) [![codecov](https://codecov.io/gh/marco76/SpringAngular2TypeScript/branch/master/graph/badge.svg)](https://codecov.io/gh/marco76/SpringAngular2TypeScript) [![star this repo](http://githubbadges.com/star.svg?user=marco76&repo=SpringAngular2TypeScript&style=default)](https://github.com/marco76/SpringAngular2TypeScript)
+[![Build Status](https://travis-ci.org/marco76/SpringAngular2TypeScript.svg?branch=master)](https://travis-ci.org/marco76/SpringAngular2TypeScript) [![star this repo](http://githubbadges.com/star.svg?user=marco76&repo=SpringAngular2TypeScript&style=default)](https://github.com/marco76/SpringAngular2TypeScript)
 [![fork this repo](http://githubbadges.com/fork.svg?user=marco76&repo=SpringAngular2TypeScript&style=default)](https://github.com/marco76/SpringAngular2TypeScript/fork)
 
 # SpringAngular2TypeScript
