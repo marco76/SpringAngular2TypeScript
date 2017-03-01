@@ -55,6 +55,13 @@
             <version>${h2.version}</version>
         </dependency>
 
+
+        <!-- monitoring -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+
         <!-- Test -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
