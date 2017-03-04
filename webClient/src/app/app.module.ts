@@ -7,22 +7,22 @@ import { HttpModule }    from '@angular/http';
 // we need it to jump from the welcome page to another page
 import {RouterModule, Routes} from '@angular/router';
 
-import {AppComponent} from './components/app.component';
-import {DavisComponent} from './components/davis.component';
-import {HelloWorld} from './components/hello-world.component';
-import {BlogComponent} from './components/blog.component';
-import {MenuComponent} from './components/menu.component';
-import {D3Component} from './components/d3/d3.component';
-import {ImageComponent} from './components/image.component';
+import {AppComponent} from './app.component';
+import {DavisComponent} from './davis/davis.component';
+import {HelloWorld} from './hello-world/hello-world.component';
+import {BlogComponent} from './blog/blog.component';
+import {MenuComponent} from './menu/menu.component';
+import {D3Component} from './d3/d3.component';
+import {ImageComponent} from './image/image.component';
 import {MonitoringComponent} from './monitoring/monitoring.component';
 
 import './../css/main.css';
 import {HighlightCodeDirective} from './directives/highlight.directive';
-import {HighlightComponent} from "./components/highlight/highlight.component";
-import {CvMain} from "./model/cvMain";
-import {CvMainComponent} from "./components/cv/cv.component";
-import {CvExperience} from "./components/cv/cv-experience.component";
-import {CvOldComponent} from "./components/cv-old/cv-old.component";
+import {HighlightComponent} from "./highlight/highlight.component";
+import {CvMain} from "./cv/shared/cv-main.model";
+import {CvMainComponent} from "./cv/cv.component";
+import {CvExperience} from "./cv/cv-experience/cv-experience.component";
+import {CvOldComponent} from "./cv/cv-old/cv-old.component";
 import {FormsModule} from "@angular/forms";
 
 

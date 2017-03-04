@@ -1,19 +1,19 @@
 import {Injectable} from '@angular/core';
 import {Http, Response} from '@angular/http';
+import {DavisCup} from './davisCup';
 import {Observable} from 'rxjs/Observable';
 import 'rxjs/Rx';
 import {ConstantsService} from '../../shared/constants.service';
 
 @Injectable()
-export class MonitoringService {
+export class DavisCupService {
+   
+     constructor (private http: Http, private ConstantsService: ConstantsService) {}
 
-    private _springEndpointPath =  this.constantsService.BACKEND_URL + '/';
-
-    constructor (private http: Http, private constantsService: ConstantsService) {}
-
-    getSpringMonitoringJSON(springEndpointName : string) {
-        return this.http.get(this._springEndpointPath + springEndpointName)
-            .map(res => res.json())
+    private _davisUrl =  this.ConstantsService.BACKEND_URL + '/result_list';  // URL to web api
+    getDavisCups() {
+        return this.http.get(this._davisUrl)
+            .map(res => <DavisCup[]> res.json())
             .catch(this.handleError);
     }
     private handleError (error: Response) {

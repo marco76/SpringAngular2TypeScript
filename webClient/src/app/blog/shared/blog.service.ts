@@ -3,17 +3,17 @@ import {Http, Response} from '@angular/http';
 import {Observable} from 'rxjs/Observable';
 import 'rxjs/Rx';
 import {ConstantsService} from '../../shared/constants.service';
+import {BlogArticle} from "./blogArticle";
 
 @Injectable()
-export class MonitoringService {
+export class BlogService {
+   
+     constructor (private http: Http, private ConstantsService: ConstantsService) {}
 
-    private _springEndpointPath =  this.constantsService.BACKEND_URL + '/';
-
-    constructor (private http: Http, private constantsService: ConstantsService) {}
-
-    getSpringMonitoringJSON(springEndpointName : string) {
-        return this.http.get(this._springEndpointPath + springEndpointName)
-            .map(res => res.json())
+    private _blogArticleURL =  this.ConstantsService.BACKEND_URL + '//blog/list';  // URL to web api
+    getArticleList() {
+        return this.http.get(this._blogArticleURL)
+            .map(res => <BlogArticle[]> res.json())
             .catch(this.handleError);
     }
     private handleError (error: Response) {
