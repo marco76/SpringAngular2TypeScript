@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {ConstantsService} from './../services/constants.service';
+import {ConstantsService} from '../shared/constants.service';
 import {HttpModule} from '@angular/http';
 import {Location} from '@angular/common';
 
