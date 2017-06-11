@@ -38,6 +38,6 @@ CMD ["java", "-jar", "/usr/src/myapp/server-0.1.4-SNAPSHOT.war"]
 
 ####
 # build with:
-# docker -t angular2-java-hello-world .
+# docker build -t angular2-java-hello-world .
 # run with:
 # docker run --rm -it -p 8080:8080  angular2-java-hello-world java -jar /usr/src/myapp/server-0.1.3-SNAPSHOT.war
