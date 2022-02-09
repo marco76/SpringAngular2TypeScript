@@ -1,7 +1,6 @@
-[![Build Status](https://travis-ci.org/marco76/SpringAngular2TypeScript.svg?branch=master)](https://travis-ci.org/marco76/SpringAngular2TypeScript) [![star this repo](http://githubbadges.com/star.svg?user=marco76&repo=SpringAngular2TypeScript&style=default)](https://github.com/marco76/SpringAngular2TypeScript)
-[![fork this repo](http://githubbadges.com/fork.svg?user=marco76&repo=SpringAngular2TypeScript&style=default)](https://github.com/marco76/SpringAngular2TypeScript/fork)
+# [Deprecated] SpringAngular2TypeScript
 
-# SpringAngular2TypeScript
+This was a cool project years ago, now you can find a new version here: (Post) https://marco.dev/deploy-java-angular-one (GitHub) https://github.com/marco76/java-angular-basic
 
 This is an example of implementation of a 'Full Stack Web Application'.
 Please note that this code is very experimental and regularly modified.
